@@ -24,8 +24,8 @@ int main()
 	do
 	{
 		cout << "Hi there " << customerName << "!\nHere's our menu:\n1. " << lemonadeName << " ~ $" << lemonadePrice
-       			  << "\n2. " << rosemaryName << " ~ $" << rosemaryPrice
-			  << "\n3. " << raspberryName << " ~ $" << fixed << setprecision(2) << raspberryPrice << endl;
+       		     << "\n2. " << rosemaryName << " ~ $" << rosemaryPrice
+		     << "\n3. " << raspberryName << " ~ $" << fixed << setprecision(2) << raspberryPrice << endl;
 
 		cout << "Which type of lemonade would you like? (1-3): " << flush;
 		cin >> choice;
@@ -48,8 +48,8 @@ int main()
 		  	  	  break;
 
 		  default: cout << "I'm sorry, I don't recognize that choice. Please choose an option between \"1\" and \"3\"." << endl;
-		  	  	     validChoice = false;
-		  	  	     break;
+		  	   validChoice = false;
+		  	   break;
 		}
 	} while (!validChoice);
 
@@ -82,26 +82,26 @@ int main()
 	{
 		char answer;
 		cout << "How would you like to pay? " << "\n1. To pay with money press \"M\""
-			  << "\n2. To pay with a credit card press \"C\""
-			  << "\n3. To pay with gold press \"G\"" << endl;
+	 	     << "\n2. To pay with a credit card press \"C\""
+		     << "\n3. To pay with gold press \"G\"" << endl;
 		cin >> answer;
 
 		switch (answer)
 		{
 		  case 'm':
 		  case 'M': cout << "You are paying using money" << endl;
-		  	  	      goodPayment = true;
-		  	  	      break;
+		  	    goodPayment = true;
+		  	    break;
 
 		  case 'c':
 		  case 'C': cout << "You are paying by Credit Card" << endl;
-		  	  	     goodPayment = true;
-		  	  	     break;
+		  	    goodPayment = true;
+		  	    break;
 
 		  case 'g':
 		  case 'G': cout << "You are paying with Gold" << endl;
-		  	  	     goodPayment = true;
-		  	  	     break;
+		  	    goodPayment = true;
+		  	    break;
 
 		  default: cout << "Invalid payment type, no lemonade for you!" << endl;
 		  	  	     goodPayment = false;
